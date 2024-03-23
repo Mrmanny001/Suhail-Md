@@ -7,54 +7,54 @@
   "app_url": "/qr/",
   
   "env": {
-    "OWNER_NAME": {
+    "OWNER_NAME": {SAMCOMMS INT.
       "description": "Name for Bot Owner",    
       "value": "Suhail Ser",
       "required" :true
     },   
      
-    "WELCOME": {
+    "WELCOME": {false
       "description": "put 'false' or 'true' to enable & disable WELCOME ",
       "value": "true",
       "required" :false
     },
      
-    "GOODBYE": {
+    "GOODBYE": {false
       "description": "put 'false' or 'true' to enable & disable GOODBYE ",
       "value": "false",
       "required" :false
     },
-    "BOT_NAME": {
+    "BOT_NAME": {MRMANNY
       "description": " NAME FOR BOT",
       "required" :false,    
       "value": "sᴜʜᴀɪʟ-ᴍᴅ"
     }, 
-    "USER_IMAGES": {
+    "USER_IMAGES": {false
       "description": "Image for bot",
       "required" :false,    
       "value": "https://telegra.ph/file/758549f0de2219884f387.jpg,https://telegra.ph/file/9498496b010dfb5900b80.jpg,https://telegra.ph/file/59bf80efbb6e6576b5a52.jpg,https://telegra.ph/file/ee0e191363161e88e4743.jpg"
     }, 
-    "TZ": {
+    "TZ": {false
       "description": "Put TIME_ZONE according to your location",
       "required" :false,    
       "value": "Asia/Karachi"
     },  
-    "FLUSH": {
+    "FLUSH": {false
       "description": " Make it 'true' if bot connected but not responed (After deployement!)",
       "required" :false,    
       "value": "false"
     },     
-    "READ_COMMAND": {
+    "READ_COMMAND": {true
       "description": " Read bot cmds",
       "required" :false,    
       "value": "false"
     },
-    "WARN_COUNT": {
+    "WARN_COUNT": {3
       "description": " Warn count for users to kick/block when warn limit exceed!",
       "required" :false,    
       "value": "3"
     },  
-    "AUTO_SAVE_STATUS": {
+    "AUTO_SAVE_STATUS": {false
       "description": " Auto save whatsapp status", 
       "required" :false,   
       "value": "false"
@@ -69,36 +69,36 @@
       "value": "",
     "required" :true
     }, 
-    "WAPRESENCE": {
+    "WAPRESENCE": {available
       "description": "Fill the value: 'unavailable'(for nothing) | 'available'(for alwaysonline) | 'composing'(for typing) | 'recording' | 'paused' ",
       "required" :false,
       "value": "unavailable"
     },
-    "AUTO_READ_STATUS": {
+    "AUTO_READ_STATUS": {true
       "description": "Fill the value true if you want bot view your Statuses.",
       "required" :false,
       "value": "true"
     }, 
-    "MSGS_IN_LOG": {
+    "MSGS_IN_LOG": {false
       "description": "Fill the value -true- if you want to see Messages in logs.",
       "required" :false,
       "value": "false"
     },
-    "READ_MESSAGE": {
+    "READ_MESSAGE": {false
       "description": "Fill the value true if you want bot to read all messages.",
       "required" :false,
       "value": "false"
     },
-    "DISABLE_PM": {
+    "DISABLE_PM": {false
       "description": "Disable bot in pm, Take it false if you wanna run bot in your pm (if MODE is Public)",
       "value": "false",
       "required" :false
     },
-    "PREFIX": {
+    "PREFIX": {.
       "description": "Enter your desired prefix for bot. you can set `all | . | .!*`",
       "value": "."
     },
-    "OWNER_NUMBER": {
+    "OWNER_NUMBER": {2349112040503
       "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
       "value": "923184474176"
     },
@@ -107,43 +107,43 @@
       "value": ""
   
     },
-    "OPENAI_API_KEY": {
+    "OPENAI_API_KEY": {https://api.openai.com/v1/completions
       "description": "put your OPENAI api key here.Get it from beta.openai.com ",
       "value": "",
       "required" :false
     }, 
-    "ELEVENLAB_API_KEY": {
+    "ELEVENLAB_API_KEY": {https://api.elevenlabs.io/v1/text-to-speech/{voice_id}
       "description": "Put your ElevenLab api key here for Aitts. Watch tutorial from https://youtu.be/HCDcdPtkwg4 ",
       "value": "",
       "required" :false
     }, 
-    "REMOVE_BG_KEY": {
+    "REMOVE_BG_KEY": {TRNt4wZe7tuRYFrQfBN8Vn4G
       "description": "put your REMOVE BG KEY here.Get it from removeBg.com ",
       "value": "",
       "required" :false
     },
-    "MODE": {
+    "MODE": {private
       "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
       "value": "private"
     },
-    "PACK_NAME": {
+    "PACK_NAME": {samcums
       "description": "Put Sticker Pack_Name.",
       "value": "Suhail Md",
       "required": false 
     },
-    "PACK_AUTHER": {
+    "PACK_AUTHER": {false
       "description": "Put Sticker Author_Name.",
       "value": "",
       "required": false 
     },
-    "STACK": {
+    "STACK": {false
       "description": "STACK NAME ",
       "value": "container | heroku-22 | 4246315815290786|01|2026|717",
       "required": false 
     }
   }, 
   "addons": [{ "plan": "heroku-postgresql:basic" }],
-  "buildpacks": [
+  "buildpacks": [heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
     { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
     { "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }
   ]
