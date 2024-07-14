@@ -76,7 +76,7 @@ module.exports = {
  
   author : process.env.PACK_AUTHER|| "",
   packname: process.env.PACK_NAME || "",
-  botname : process.env.BOT_NAME  || " 'SAMCOMMS_INTERNET_SERVICES' ",
+  botname : process.env.BOT_NAME  || " SAMCOMMS_INTERNET_SERVICES ",
   ownername:process.env.OWNER_NAME|| "SAMCOMMS",
 
 
